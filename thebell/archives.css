@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background: #001335;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+	
+}
+	
+a:link {
+	text-decoration: none;
+}

@@ -7,94 +7,315 @@
 </head>
 <body>
 
-	<!-- Sidebar -->
-	<label>
-	  <input type="checkbox">
-	  <span class="menu">
-		<span class="hamburger"></span>
-	  </span>
-	  <ul>
-		<li>
-		  <a href="#">Community</a>
-		</li>
-		<li>
-		  <a href="#">News</a>
-		</li>
-		<li>
-		  <a href="#">Sports</a>
-		</li>
-  		<li>
-		  <a href="#">Opinion</a>
-		</li>
-	  	<li>
-		  <a href="#">Arts</a>
-		</li>
-	  	<li>
-		  <a href="#">Article Sign Up</a>
-		</li>
-	  	<li>
-		  <a href="#">Look Alike Suggestions</a>
-		  </li>
-		<li>
-		  <a href="#">Archives</a>
-		</li>
-		<li>
-		  <a href="#">Look Alikes</a>
-		</li>
-		<li>
-		  <a href="#">Staff</a>
-		</li>
-		<li>
-		  <a href="#">Contact</a>
-		</li>
-	  </ul>
-	</label>
-
-	
-	<!-- Search Bar-->
-		<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-	  <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
-		<path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
-		fill-rule="evenodd" />
-	  </symbol>
-	  <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-2" viewBox="0 0 20 20">
-		<path d="M8.96 10L.52 1.562 0 1.042 1.04 0l.522.52L10 8.96 18.438.52l.52-.52L20 1.04l-.52.522L11.04 10l8.44 8.438.52.52L18.96 20l-.522-.52L10 11.04l-8.438 8.44-.52.52L0 18.96l.52-.522L8.96 10z" fill-rule="evenodd" />
-	  </symbol>
-	</svg>
-
-	<form novalidate onsubmit="return false;" class="searchbox sbx-custom">
-	  <div role="search" class="sbx-custom__wrapper">
-		<input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input">
-		<button type="submit" title="Submit your search query." class="sbx-custom__submit">
-		  <svg role="img" aria-label="Search">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
-		  </svg>
-		</button>
-		<button type="reset" title="Clear the search query." class="sbx-custom__reset">
-		  <svg role="img" aria-label="Reset">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-2"></use>
-		  </svg>
-		</button>
-	  </div>
-	</form>
-	<script type="text/javascript">
-	  document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
-	</script>
-	
-			
+	<!-- Sidebar from https://codemyui.com/pure-css-fullscreen-navigation-menu/ -->
+<label>
+  <input type="checkbox">
+  <span class="menu">
+    <span class="hamburger"></span>
+  </span>
+  <ul>
+    <li>
+      <a href="community.html">Community</a>
+    </li>
+    <li>
+      <a href="sportspage.html">Sports</a>
+    </li>
+    <li>
+      <a href="opinions.html">Opinions</a>
+    </li>
+    <li>
+      <a href="signup.html">Article Sign Up</a>
+    </li>
+    <li>
+      <a href="lookalikes.html">Look Alike Suggestions</a>
+    </li>
+    <li>
+      <a href="archives.html">Archives</a>
+    </li>
+    <li>
+      <a href="staff.html">Staff</a>
+    </li>
+    <li>
+      <a href="Contactform.html">Contact</a>
+    </li>
+  </ul>
+</label>
+		<!--Searchbar -->
+		<div class="search">
+		<input type="text"  placeholder="Search"/>
+		</div>
 		
-		<!-- Logo-->
-		<center>
-			<img class="logo" src="../../Documents/bellwebsitelogo.png" width="500">
-		</center>
+
+		
+		<!-- Logo by https://tympanus.net/codrops/2015/02/16/create-animated-text-fills/-->
+		<div class="logo">
+
+		<svg viewBox="0 0 600 300" class="svg-defs">
+
+		  <!-- Symbol with text -->
+		  <symbol id="s-text">
+			<text text-anchor="middle"
+				  x="50%"
+				  y="50%"
+				  dy=".35em"
+				  class="text"
+				  >
+			  THE BELL
+			</text>    
+		  </symbol>
+
+		  <!-- Mask with text -->
+		  <mask id="m-text"
+				maskunits="userSpaceOnUse"
+				maskcontentunits="userSpaceOnUse">
+
+			<rect
+				  width="100%"
+				  height="100%"
+				  class="mask__shape">
+			</rect>
+			<use xlink:href="#s-text"
+				 class="mask__text"
+				 ></use>
+
+		  </mask>
+		</svg>
+
+		<div class="box-with-text">
+
+		  <!-- Container for video -->
+		  <div class="text-fill">
+			<video 
+				   class="video" src="../images/Bell Wesbite Test Video.mp4"
+				   autoplay loop muted
+				   ></video>
+		  </div>
+
+		  <!-- Visible SVG -->
+		  <svg viewBox="0 0 600 300"
+			   class="svg-inverted-mask">
+			<rect
+				  width="100%"
+				  height="100%"
+				  mask="url(#m-text)"
+				  class="shape--fill"/>
+			<use xlink:href="#s-text"
+				 class="text--transparent"
+				 ></use>
+		  </svg> 
+		</div>
+		</div>
+		
 	<!--Scrolling-->
 	<script>
 	function scrollWin() {
 		window.scrollBy(0, 100);
 	}
 	</script>
+		
+	<div class="main">
+  <div class="logo-area">
+    <div class="box-top">
+      <div class="cube">
+        <div class="front">
+          <!-- logo SVGs taken from Wikimedia Commons -->
+          <h6> 
+			  </br>
+          THE BELL 
+          </h6><svg version="1.1" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="110.11px" height="90.402px" viewBox="0 0 110.11 90.402" enable-background="new 0 0 110.11 90.402" xml:space="preserve">
+<g id="layer1" transform="translate(2015.8 -227.93)">
+	<path id="path4147" fill="#FFFFFF"/>
+	<ellipse id="path4149" fill="transparent" cx="-1944.076" cy="268.201" rx="14.911" ry="14.704"/>
+	<path id="path4151" fill="#0030A0"/>
+	<path id="path4153" fill="#FFFFFF"/>
+	<path id="path4155" fill="#FFFFFF"/>
+	<path id="path4157" fill="#FFFFFF"/>
+	<path id="path4161" fill="#FFFFFF"/>
+	<path id="path4163" fill="#FFFFFF"/>
+	<lineargradient id="path4165_1_" gradientUnits="userSpaceOnUse" x1="-1986.6941" y1="318.4402" x2="-1986.6941" y2="228.2518">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</lineargradient>
+	<path id="path4165" fill="url(#path4165_1_)"/>
 	
+		<lineargradient id="path4167_1_" gradientUnits="userSpaceOnUse" x1="-4015.781" y1="702.8973" x2="-4015.781" y2="793.033" gradientTransform="matrix(1 0 0 -1 2015.7998 1021.2301)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</lineargradient>
+	<path id="path4167" fill="url(#path4167_1_)"/>
+</g>
+</svg>
+
+        </div>
+        <div class="right">
+          <h6> 
+			  </br>
+          THE BELL 
+          </h6><svg version="1.1" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="110.11px" height="90.402px" viewBox="0 0 110.11 90.402" enable-background="new 0 0 110.11 90.402" xml:space="preserve">
+<g id="layer1" transform="translate(2015.8 -227.93)">
+  <path id="path4147" fill="#FFFFFF"
+	<ellipse id="path4149" fill="transparent" cx="-1944.076" cy="268.201" rx="14.911" ry="14.704"/>
+	<path id="path4151" fill="#0030A0" />
+	<path id="path4153" fill="#FFFFFF" />
+  <path id="path4155" fill="#FFFFFF" />
+	<path id="path4157" fill="#FFFFFF" />
+	<path id="path4161" fill="#FFFFFF"/>
+	<path id="path4163" fill="#FFFFFF"/>
+	<linearGradient id="path4165_1_" gradientUnits="userSpaceOnUse" x1="-1986.6941" y1="318.4402" x2="-1986.6941" y2="228.2518">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path id="path4165" fill="url(#path4165_1_)"/>
 	
+		<linearGradient id="path4167_1_" gradientUnits="userSpaceOnUse" x1="-4015.781" y1="702.8973" x2="-4015.781" y2="793.033" gradientTransform="matrix(1 0 0 -1 2015.7998 1021.2301)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path id="path4167" fill="url(#path4167_1_)" d="M-2015.663,318.332l31.392-90.135h-12.842l-18.576,88.601v1.535L-2015.663,318.332
+		z"/>
+</g>
+</svg>
+        </div>
+        <div class="back">
+          <h6> 
+			  </br>
+          THE BELL 
+          </h6><svg version="1.1" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="110.11px" height="90.402px" viewBox="0 0 110.11 90.402" enable-background="new 0 0 110.11 90.402" xml:space="preserve">
+<g id="layer1" transform="translate(2015.8 -227.93)">
+	<path id="path4147" fill="transparent" d="M-1977.275,253.557h18.07l0.621,7.908h-10.184v3.885h8.276v7.839h-8.368v9.403h-8.483
+		v-29.035H-1977.275z"/>
+	<path id="path4151" fill="#0030A0"/>
+	<path id="path4153" fill="#FFFFFF"/>
+	<path id="path4155" fill="#FFFFFF" d="M-1998.294,313.981v-26.399h7.705l7.998,13.33v-13.362h6.632v26.432h-6.496l-9.044-15.15
+		l-0.033,15.15H-1998.294L-1998.294,313.981z"/>
+	<path id="path4157" fill="#FFFFFF"/>
+	<path id="path4161" fill="#FFFFFF" d="M-1926.179,306.188l6.282-1.409c0.673,1.557,1.246,3.182,4.188,3.16
+		c2.126,0.118,2.661-0.608,2.78-1.446c0.257-1.808-1.619-2.283-3.236-2.741c-2.625-0.744-5.03-1.47-6.739-3.008
+		c-1.361-1.225-2.705-2.589-2.094-7.158c0.83-3.568,3.062-6.251,7.767-6.815c7.023-0.841,9.73,2.824,11.003,6.549l-5.864,1.866
+		c-0.798-1.19-1.563-2.682-3.35-2.704c-2.22-0.027-2.667,1.324-2.741,1.942c-0.114,0.953,0.902,1.633,2.208,1.903
+		c3.167,0.656,4.453,1.29,5.758,1.773c2.118,0.785,3.497,2.217,4.059,4.045c1.348,4.388-0.32,8.494-3.53,10.477
+		c-2.444,1.51-5.435,2.269-10.094,0.989C-1922.878,312.763-1925.351,310.173-1926.179,306.188L-1926.179,306.188z"/>
+	<path id="path4163" fill="#FFFFFF" d="M-1955.874,287.458h6.815l3.274,15.61l3.084-15.648h5.749l3.236,15.419l3.274-15.382h5.521
+		l-6.244,26.576h-6.091l-3.123-15.153l-3.046,15.039h-6.244L-1955.874,287.458z"/>
+	<lineargradient id="path4165_1_" gradientUnits="userSpaceOnUse" x1="-1986.6941" y1="318.4402" x2="-1986.6941" y2="228.2518">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</lineargradient>
+	<path id="path4165" fill="url(#path4165_1_)" d="M-2014.989,318.387l15.614-24.661v-7.215h4.523l16.584-26.168v-7.915h5.169
+		l15.184-24.176h-14.43l-43.129,90.188h0.485V318.387z"/>
 	
+		<lineargradient id="path4167_1_" gradientUnits="userSpaceOnUse" x1="-4015.781" y1="702.8973" x2="-4015.781" y2="793.033" gradientTransform="matrix(1 0 0 -1 2015.7998 1021.2301)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</lineargradient>
+	<path id="path4167" fill="url(#path4167_1_)" d="M-2015.663,318.332l31.392-90.135h-12.842l-18.576,88.601v1.535L-2015.663,318.332
+		z"/>
+</g>
+</svg>
+        </div>
+        <div class='left'>
+          <h6> 
+			  </br>
+          THE BELL 
+          </h6><svg version="1.1" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="110.11px" height="90.402px" viewBox="0 0 110.11 90.402" enable-background="new 0 0 110.11 90.402" xml:space="preserve">
+<g id="layer1" transform="translate(2015.8 -227.93)">
+	<path id="path4147" fill="#FFFFFF"/>
+	<ellipse id="path4149" fill="transparent" cx="-1944.076" cy="268.201" rx="14.911" ry="14.704"/>
+	<path id="path4151" fill="#0030A0" />
+	<path id="path4153" fill="#FFFFFF"/>
+	<path id="path4155" fill="#FFFFFF"/>
+	<path id="path4157" fill="#FFFFFF"/>
+	<path id="path4161" fill="#FFFFFF"/>
+	<path id="path4163" fill="#FFFFFF"/>
+	<linearGradient id="path4165_1_" gradientUnits="userSpaceOnUse" x1="-1986.6941" y1="318.4402" x2="-1986.6941" y2="228.2518">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path id="path4165" fill="url(#path4165_1_)"/>
+	
+		<linearGradient id="path4167_1_" gradientUnits="userSpaceOnUse" x1="-4015.781" y1="702.8973" x2="-4015.781" y2="793.033" gradientTransform="matrix(1 0 0 -1 2015.7998 1021.2301)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+	</linearGradient>
+	<path id="path4167" fill="url(#path4167_1_)"/>
+</g>
+</svg>
+        </div>
+      </div>
+    </div>
+    <div class='box-bttm'>
+      <div class='cube'>
+        <div class='front'>
+          channel
+        </div>
+        <div class='right'>
+          LIVE
+        </div>
+        <div class='back'>
+          channel
+        </div>
+        <div class='left'>
+          <div class="time">
+            <span class="hm"></span>
+            <span class="ampm"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='cur-event'>
+    <div class='top'></div>
+    <div class='glow'></div>
+    <div class='bttm'></div>
+    <p>The Breaking news in a nutshell</p>
+  </div>
+</div>
+<div class='ticker'>
+  <p class='ticker-txt'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <div class='stock-info'>
+    <div class='stock-symbol'>
+      <!-- A fictitious stock symbol for CodePen since I’m not aware of a real one -->
+      <p>BELL</p>
+    </div>
+    <span>12,345.67</span>
+  </div>
+</div>
+<div class='bottom'></div>
+<script>
+/* JavaScript for the clock only */
+
+function updateTime() {
+  var dateInfo = new Date();
+
+  // get computer time
+  var hr,
+    _min = (dateInfo.getMinutes() < 10) ? "0" + dateInfo.getMinutes() : dateInfo.getMinutes(),
+    ampm = (dateInfo.getHours() > 12) ? "PM" : "AM";
+
+  if (dateInfo.getHours() == 0) {
+    hr = 12;
+  } else if (dateInfo.getHours() > 12) {
+    hr = dateInfo.getHours() - 12;
+  } else {
+    hr = dateInfo.getHours();
+  }
+
+  var currentTime = hr + ":" + _min;
+
+  // print time
+  document.querySelector(".hm").innerHTML = currentTime;
+  document.querySelector(".ampm").innerHTML = ampm;
+};
+
+// print time and date once, then update them every second
+updateTime();
+setInterval(function() {
+  updateTime()
+}, 1000);
+</script>
 </body>
 </html>
